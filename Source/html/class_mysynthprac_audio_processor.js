@@ -1,0 +1,26 @@
+var class_mysynthprac_audio_processor =
+[
+    [ "MysynthpracAudioProcessor", "class_mysynthprac_audio_processor.html#a26eb84c61338978d6c6e387a9017d688", null ],
+    [ "~MysynthpracAudioProcessor", "class_mysynthprac_audio_processor.html#af2e2311718f40a0aaf7db88f98aed7ce", null ],
+    [ "acceptsMidi", "class_mysynthprac_audio_processor.html#a23f5281ae07427676f701858e050709c", null ],
+    [ "changeProgramName", "class_mysynthprac_audio_processor.html#a2daaf078ae32da000af57d4d70ab8909", null ],
+    [ "createEditor", "class_mysynthprac_audio_processor.html#aac2d87c11a0e23196fea6dc9a1472a20", null ],
+    [ "getCurrentProgram", "class_mysynthprac_audio_processor.html#aa02485610a141dfda6de440184bba0eb", null ],
+    [ "getName", "class_mysynthprac_audio_processor.html#a5a66ece4104e491828cc5b47ba7665d4", null ],
+    [ "getNumPrograms", "class_mysynthprac_audio_processor.html#a157dc0cb9cab23511d168eefb77253b5", null ],
+    [ "getProgramName", "class_mysynthprac_audio_processor.html#af41f0af1f72a32d450a78a9ab0930eab", null ],
+    [ "getStateInformation", "class_mysynthprac_audio_processor.html#aafdb555cd7b00d795c16e888ea9b0557", null ],
+    [ "getTailLengthSeconds", "class_mysynthprac_audio_processor.html#a646efcb119698c41652526cc91fe88d6", null ],
+    [ "hasEditor", "class_mysynthprac_audio_processor.html#a067b10156850ea95d3a1964baa244320", null ],
+    [ "isBusesLayoutSupported", "class_mysynthprac_audio_processor.html#a87d380310bdf6570abbf32bcd32b2c11", null ],
+    [ "isMidiEffect", "class_mysynthprac_audio_processor.html#a1a005dc45f8327b380e52e66747e28da", null ],
+    [ "prepareToPlay", "class_mysynthprac_audio_processor.html#ab86f0c96cec6e652b182952bb29d2654", null ],
+    [ "processBlock", "class_mysynthprac_audio_processor.html#a2a3625375542ca79c9d43e5d37b3abd1", null ],
+    [ "producesMidi", "class_mysynthprac_audio_processor.html#ab9dbb4787eda60d5eb6134485fc787fd", null ],
+    [ "releaseResources", "class_mysynthprac_audio_processor.html#ab56d0f1ac7da10205e1c84954ed7093d", null ],
+    [ "setCurrentProgram", "class_mysynthprac_audio_processor.html#a37176d169184893ac4a9a76542112f65", null ],
+    [ "setLadderFilter", "class_mysynthprac_audio_processor.html#a3993a39d7cf1732c2b2715a3a39342ee", null ],
+    [ "setStateInformation", "class_mysynthprac_audio_processor.html#a0404a27aa0c84da6562dea5bc0c287df", null ],
+    [ "cachedBuffer", "class_mysynthprac_audio_processor.html#a47b4047cdd9c705f94a4412bce8f96e9", null ],
+    [ "state", "class_mysynthprac_audio_processor.html#a9d223e3dc6f3f4a2aec957e818cbfc46", null ]
+];

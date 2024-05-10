@@ -1,0 +1,190 @@
+\hypertarget{class_sine_wave_voice}{}\doxysection{Sine\+Wave\+Voice Class Reference}
+\label{class_sine_wave_voice}\index{SineWaveVoice@{SineWaveVoice}}
+
+
+{\ttfamily \#include $<$Plugin\+Processor.\+h$>$}
+
+Inheritance diagram for Sine\+Wave\+Voice\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sine_wave_voice}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}{Wave\+Type}} \{ \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a363d8857f36546f3dcf14894424e9473}{SINE}} = 0
+, \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a06d9f3bd4c819e911cac1db863b673ad}{TRIANGLE}}
+, \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a8b7a0ba85edcb6aaadadfe67c816061b}{SAW}}
+, \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a25521e0b2bf792429511019a1646b05c}{SQUARE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sine_wave_voice_aef79b6b4cc2819540c94cab1d1f0ee7d}{Sine\+Wave\+Voice}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a93aae7eda11dc4960e5667e21f95ae0c}{set\+Wave\+Type}} (\mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}{Wave\+Type}} type, bool disable\+Check=false)
+\item 
+bool \mbox{\hyperlink{class_sine_wave_voice_a0eff5773a344db0627cc0a57696bde6f}{can\+Play\+Sound}} (juce\+::\+Synthesiser\+Sound $\ast$sound) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a46f14cb2f00beb0ae65d6c3446774b87}{create\+Sine\+Wavetable}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_adfdb19807b86dfd1e40dd388058008e6}{create\+Saw\+Wavetable}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_ad2bff3c7dc8eaa41b14611434ca3f380}{create\+Square\+Wavetable}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_ad014ba41344867020ed7931d33d3305f}{create\+Tri\+Wavetable}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a860308f7f268245be7a08cd2ccbcf0be}{start\+Note}} (int midi\+Note\+Number, float velocity, juce\+::\+Synthesiser\+Sound $\ast$, int) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a8f49890bc1a43e2079f8dd2984c14b1c}{stop\+Note}} (float, bool allow\+Tail\+Off) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a3d89afa9a58abb316ad90ec143446438}{prepare\+To\+Play}} (double sample\+Rate)
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_ae7b6c73b0b3e58da9080e84321ea590f}{set\+Volume}} (float the\+Master\+Volume)
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_ac07be0e4960de3a4d5d3fa506b2bf9d5}{render\+Next\+Block}} (juce\+::\+Audio\+Sample\+Buffer \&output\+Buffer, int start\+Sample, int num\+Samples) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a4e9d1a71df7e368539f3864b2c253504}{pitch\+Wheel\+Moved}} (int) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a496d9abe5e688d901c3771575e42968b}{controller\+Moved}} (int, int) override
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_a89a752eac3b9f7ae3bd3e3c05feecaff}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_sine_wave_voice_ab33ef6d02782ba1696408ffc00138529}{set\+ADSRParameters}} (const float attack, const float decay, const float sustain, const float release)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}\label{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}} 
+\index{SineWaveVoice@{SineWaveVoice}!WaveType@{WaveType}}
+\index{WaveType@{WaveType}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{WaveType}{WaveType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}{Sine\+Wave\+Voice\+::\+Wave\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINE@{SINE}!SineWaveVoice@{SineWaveVoice}}\index{SineWaveVoice@{SineWaveVoice}!SINE@{SINE}}}\mbox{\Hypertarget{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a363d8857f36546f3dcf14894424e9473}\label{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a363d8857f36546f3dcf14894424e9473}} 
+SINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRIANGLE@{TRIANGLE}!SineWaveVoice@{SineWaveVoice}}\index{SineWaveVoice@{SineWaveVoice}!TRIANGLE@{TRIANGLE}}}\mbox{\Hypertarget{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a06d9f3bd4c819e911cac1db863b673ad}\label{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a06d9f3bd4c819e911cac1db863b673ad}} 
+TRIANGLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAW@{SAW}!SineWaveVoice@{SineWaveVoice}}\index{SineWaveVoice@{SineWaveVoice}!SAW@{SAW}}}\mbox{\Hypertarget{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a8b7a0ba85edcb6aaadadfe67c816061b}\label{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a8b7a0ba85edcb6aaadadfe67c816061b}} 
+SAW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SQUARE@{SQUARE}!SineWaveVoice@{SineWaveVoice}}\index{SineWaveVoice@{SineWaveVoice}!SQUARE@{SQUARE}}}\mbox{\Hypertarget{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a25521e0b2bf792429511019a1646b05c}\label{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652a25521e0b2bf792429511019a1646b05c}} 
+SQUARE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sine_wave_voice_aef79b6b4cc2819540c94cab1d1f0ee7d}\label{class_sine_wave_voice_aef79b6b4cc2819540c94cab1d1f0ee7d}} 
+\index{SineWaveVoice@{SineWaveVoice}!SineWaveVoice@{SineWaveVoice}}
+\index{SineWaveVoice@{SineWaveVoice}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{SineWaveVoice()}{SineWaveVoice()}}
+{\footnotesize\ttfamily Sine\+Wave\+Voice\+::\+Sine\+Wave\+Voice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sine_wave_voice_a0eff5773a344db0627cc0a57696bde6f}\label{class_sine_wave_voice_a0eff5773a344db0627cc0a57696bde6f}} 
+\index{SineWaveVoice@{SineWaveVoice}!canPlaySound@{canPlaySound}}
+\index{canPlaySound@{canPlaySound}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{canPlaySound()}{canPlaySound()}}
+{\footnotesize\ttfamily bool Sine\+Wave\+Voice\+::can\+Play\+Sound (\begin{DoxyParamCaption}\item[{juce\+::\+Synthesiser\+Sound $\ast$}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a496d9abe5e688d901c3771575e42968b}\label{class_sine_wave_voice_a496d9abe5e688d901c3771575e42968b}} 
+\index{SineWaveVoice@{SineWaveVoice}!controllerMoved@{controllerMoved}}
+\index{controllerMoved@{controllerMoved}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{controllerMoved()}{controllerMoved()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::controller\+Moved (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_adfdb19807b86dfd1e40dd388058008e6}\label{class_sine_wave_voice_adfdb19807b86dfd1e40dd388058008e6}} 
+\index{SineWaveVoice@{SineWaveVoice}!createSawWavetable@{createSawWavetable}}
+\index{createSawWavetable@{createSawWavetable}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{createSawWavetable()}{createSawWavetable()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::create\+Saw\+Wavetable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a46f14cb2f00beb0ae65d6c3446774b87}\label{class_sine_wave_voice_a46f14cb2f00beb0ae65d6c3446774b87}} 
+\index{SineWaveVoice@{SineWaveVoice}!createSineWavetable@{createSineWavetable}}
+\index{createSineWavetable@{createSineWavetable}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{createSineWavetable()}{createSineWavetable()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::create\+Sine\+Wavetable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_ad2bff3c7dc8eaa41b14611434ca3f380}\label{class_sine_wave_voice_ad2bff3c7dc8eaa41b14611434ca3f380}} 
+\index{SineWaveVoice@{SineWaveVoice}!createSquareWavetable@{createSquareWavetable}}
+\index{createSquareWavetable@{createSquareWavetable}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{createSquareWavetable()}{createSquareWavetable()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::create\+Square\+Wavetable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_ad014ba41344867020ed7931d33d3305f}\label{class_sine_wave_voice_ad014ba41344867020ed7931d33d3305f}} 
+\index{SineWaveVoice@{SineWaveVoice}!createTriWavetable@{createTriWavetable}}
+\index{createTriWavetable@{createTriWavetable}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{createTriWavetable()}{createTriWavetable()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::create\+Tri\+Wavetable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a4e9d1a71df7e368539f3864b2c253504}\label{class_sine_wave_voice_a4e9d1a71df7e368539f3864b2c253504}} 
+\index{SineWaveVoice@{SineWaveVoice}!pitchWheelMoved@{pitchWheelMoved}}
+\index{pitchWheelMoved@{pitchWheelMoved}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{pitchWheelMoved()}{pitchWheelMoved()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::pitch\+Wheel\+Moved (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a3d89afa9a58abb316ad90ec143446438}\label{class_sine_wave_voice_a3d89afa9a58abb316ad90ec143446438}} 
+\index{SineWaveVoice@{SineWaveVoice}!prepareToPlay@{prepareToPlay}}
+\index{prepareToPlay@{prepareToPlay}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{prepareToPlay()}{prepareToPlay()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::prepare\+To\+Play (\begin{DoxyParamCaption}\item[{double}]{sample\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_ac07be0e4960de3a4d5d3fa506b2bf9d5}\label{class_sine_wave_voice_ac07be0e4960de3a4d5d3fa506b2bf9d5}} 
+\index{SineWaveVoice@{SineWaveVoice}!renderNextBlock@{renderNextBlock}}
+\index{renderNextBlock@{renderNextBlock}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{renderNextBlock()}{renderNextBlock()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::render\+Next\+Block (\begin{DoxyParamCaption}\item[{juce\+::\+Audio\+Sample\+Buffer \&}]{output\+Buffer,  }\item[{int}]{start\+Sample,  }\item[{int}]{num\+Samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a89a752eac3b9f7ae3bd3e3c05feecaff}\label{class_sine_wave_voice_a89a752eac3b9f7ae3bd3e3c05feecaff}} 
+\index{SineWaveVoice@{SineWaveVoice}!reset@{reset}}
+\index{reset@{reset}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_ab33ef6d02782ba1696408ffc00138529}\label{class_sine_wave_voice_ab33ef6d02782ba1696408ffc00138529}} 
+\index{SineWaveVoice@{SineWaveVoice}!setADSRParameters@{setADSRParameters}}
+\index{setADSRParameters@{setADSRParameters}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{setADSRParameters()}{setADSRParameters()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::set\+ADSRParameters (\begin{DoxyParamCaption}\item[{const float}]{attack,  }\item[{const float}]{decay,  }\item[{const float}]{sustain,  }\item[{const float}]{release }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_ae7b6c73b0b3e58da9080e84321ea590f}\label{class_sine_wave_voice_ae7b6c73b0b3e58da9080e84321ea590f}} 
+\index{SineWaveVoice@{SineWaveVoice}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::set\+Volume (\begin{DoxyParamCaption}\item[{float}]{the\+Master\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a93aae7eda11dc4960e5667e21f95ae0c}\label{class_sine_wave_voice_a93aae7eda11dc4960e5667e21f95ae0c}} 
+\index{SineWaveVoice@{SineWaveVoice}!setWaveType@{setWaveType}}
+\index{setWaveType@{setWaveType}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{setWaveType()}{setWaveType()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::set\+Wave\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sine_wave_voice_a8fc75035f26947fa7aa1342810c6d652}{Wave\+Type}}}]{type,  }\item[{bool}]{disable\+Check = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a860308f7f268245be7a08cd2ccbcf0be}\label{class_sine_wave_voice_a860308f7f268245be7a08cd2ccbcf0be}} 
+\index{SineWaveVoice@{SineWaveVoice}!startNote@{startNote}}
+\index{startNote@{startNote}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{startNote()}{startNote()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::start\+Note (\begin{DoxyParamCaption}\item[{int}]{midi\+Note\+Number,  }\item[{float}]{velocity,  }\item[{juce\+::\+Synthesiser\+Sound $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_sine_wave_voice_a8f49890bc1a43e2079f8dd2984c14b1c}\label{class_sine_wave_voice_a8f49890bc1a43e2079f8dd2984c14b1c}} 
+\index{SineWaveVoice@{SineWaveVoice}!stopNote@{stopNote}}
+\index{stopNote@{stopNote}!SineWaveVoice@{SineWaveVoice}}
+\doxysubsubsection{\texorpdfstring{stopNote()}{stopNote()}}
+{\footnotesize\ttfamily void Sine\+Wave\+Voice\+::stop\+Note (\begin{DoxyParamCaption}\item[{float}]{,  }\item[{bool}]{allow\+Tail\+Off }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_plugin_processor_8h}{Plugin\+Processor.\+h}}\end{DoxyCompactItemize}

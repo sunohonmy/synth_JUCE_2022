@@ -1,0 +1,217 @@
+\hypertarget{class_mysynthprac_audio_processor}{}\doxysection{Mysynthprac\+Audio\+Processor Class Reference}
+\label{class_mysynthprac_audio_processor}\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+
+
+{\ttfamily \#include $<$Plugin\+Processor.\+h$>$}
+
+Inheritance diagram for Mysynthprac\+Audio\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mysynthprac_audio_processor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mysynthprac_audio_processor_a26eb84c61338978d6c6e387a9017d688}{Mysynthprac\+Audio\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_mysynthprac_audio_processor_af2e2311718f40a0aaf7db88f98aed7ce}{$\sim$\+Mysynthprac\+Audio\+Processor}} () override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_ab86f0c96cec6e652b182952bb29d2654}{prepare\+To\+Play}} (double sample\+Rate, int samples\+Per\+Block) override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_ab56d0f1ac7da10205e1c84954ed7093d}{release\+Resources}} () override
+\item 
+bool \mbox{\hyperlink{class_mysynthprac_audio_processor_a87d380310bdf6570abbf32bcd32b2c11}{is\+Buses\+Layout\+Supported}} (const Buses\+Layout \&layouts) const override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_a2a3625375542ca79c9d43e5d37b3abd1}{process\+Block}} (juce\+::\+Audio\+Buffer$<$ float $>$ \&, juce\+::\+Midi\+Buffer \&) override
+\item 
+juce\+::\+Audio\+Processor\+Editor $\ast$ \mbox{\hyperlink{class_mysynthprac_audio_processor_aac2d87c11a0e23196fea6dc9a1472a20}{create\+Editor}} () override
+\item 
+bool \mbox{\hyperlink{class_mysynthprac_audio_processor_a067b10156850ea95d3a1964baa244320}{has\+Editor}} () const override
+\item 
+const juce\+::\+String \mbox{\hyperlink{class_mysynthprac_audio_processor_a5a66ece4104e491828cc5b47ba7665d4}{get\+Name}} () const override
+\item 
+bool \mbox{\hyperlink{class_mysynthprac_audio_processor_a23f5281ae07427676f701858e050709c}{accepts\+Midi}} () const override
+\item 
+bool \mbox{\hyperlink{class_mysynthprac_audio_processor_ab9dbb4787eda60d5eb6134485fc787fd}{produces\+Midi}} () const override
+\item 
+bool \mbox{\hyperlink{class_mysynthprac_audio_processor_a1a005dc45f8327b380e52e66747e28da}{is\+Midi\+Effect}} () const override
+\item 
+double \mbox{\hyperlink{class_mysynthprac_audio_processor_a646efcb119698c41652526cc91fe88d6}{get\+Tail\+Length\+Seconds}} () const override
+\item 
+int \mbox{\hyperlink{class_mysynthprac_audio_processor_a157dc0cb9cab23511d168eefb77253b5}{get\+Num\+Programs}} () override
+\item 
+int \mbox{\hyperlink{class_mysynthprac_audio_processor_aa02485610a141dfda6de440184bba0eb}{get\+Current\+Program}} () override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_a37176d169184893ac4a9a76542112f65}{set\+Current\+Program}} (int index) override
+\item 
+const juce\+::\+String \mbox{\hyperlink{class_mysynthprac_audio_processor_af41f0af1f72a32d450a78a9ab0930eab}{get\+Program\+Name}} (int index) override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_a2daaf078ae32da000af57d4d70ab8909}{change\+Program\+Name}} (int index, const juce\+::\+String \&new\+Name) override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_aafdb555cd7b00d795c16e888ea9b0557}{get\+State\+Information}} (juce\+::\+Memory\+Block \&dest\+Data) override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_a0404a27aa0c84da6562dea5bc0c287df}{set\+State\+Information}} (const void $\ast$data, int size\+In\+Bytes) override
+\item 
+void \mbox{\hyperlink{class_mysynthprac_audio_processor_a3993a39d7cf1732c2b2715a3a39342ee}{set\+Ladder\+Filter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+juce\+::\+Audio\+Processor\+Value\+Tree\+State \mbox{\hyperlink{class_mysynthprac_audio_processor_a9d223e3dc6f3f4a2aec957e818cbfc46}{state}}
+\item 
+juce\+::\+Audio\+Buffer$<$ float $>$ \mbox{\hyperlink{class_mysynthprac_audio_processor_a47b4047cdd9c705f94a4412bce8f96e9}{cached\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a26eb84c61338978d6c6e387a9017d688}\label{class_mysynthprac_audio_processor_a26eb84c61338978d6c6e387a9017d688}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{MysynthpracAudioProcessor()}{MysynthpracAudioProcessor()}}
+{\footnotesize\ttfamily Mysynthprac\+Audio\+Processor\+::\+Mysynthprac\+Audio\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_af2e2311718f40a0aaf7db88f98aed7ce}\label{class_mysynthprac_audio_processor_af2e2311718f40a0aaf7db88f98aed7ce}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!````~MysynthpracAudioProcessor@{$\sim$MysynthpracAudioProcessor}}
+\index{````~MysynthpracAudioProcessor@{$\sim$MysynthpracAudioProcessor}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{$\sim$MysynthpracAudioProcessor()}{~MysynthpracAudioProcessor()}}
+{\footnotesize\ttfamily Mysynthprac\+Audio\+Processor\+::$\sim$\+Mysynthprac\+Audio\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a23f5281ae07427676f701858e050709c}\label{class_mysynthprac_audio_processor_a23f5281ae07427676f701858e050709c}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!acceptsMidi@{acceptsMidi}}
+\index{acceptsMidi@{acceptsMidi}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{acceptsMidi()}{acceptsMidi()}}
+{\footnotesize\ttfamily bool Mysynthprac\+Audio\+Processor\+::accepts\+Midi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a2daaf078ae32da000af57d4d70ab8909}\label{class_mysynthprac_audio_processor_a2daaf078ae32da000af57d4d70ab8909}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!changeProgramName@{changeProgramName}}
+\index{changeProgramName@{changeProgramName}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{changeProgramName()}{changeProgramName()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::change\+Program\+Name (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const juce\+::\+String \&}]{new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_aac2d87c11a0e23196fea6dc9a1472a20}\label{class_mysynthprac_audio_processor_aac2d87c11a0e23196fea6dc9a1472a20}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!createEditor@{createEditor}}
+\index{createEditor@{createEditor}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{createEditor()}{createEditor()}}
+{\footnotesize\ttfamily juce\+::\+Audio\+Processor\+Editor $\ast$ Mysynthprac\+Audio\+Processor\+::create\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_aa02485610a141dfda6de440184bba0eb}\label{class_mysynthprac_audio_processor_aa02485610a141dfda6de440184bba0eb}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getCurrentProgram@{getCurrentProgram}}
+\index{getCurrentProgram@{getCurrentProgram}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getCurrentProgram()}{getCurrentProgram()}}
+{\footnotesize\ttfamily int Mysynthprac\+Audio\+Processor\+::get\+Current\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a5a66ece4104e491828cc5b47ba7665d4}\label{class_mysynthprac_audio_processor_a5a66ece4104e491828cc5b47ba7665d4}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getName@{getName}}
+\index{getName@{getName}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const juce\+::\+String Mysynthprac\+Audio\+Processor\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a157dc0cb9cab23511d168eefb77253b5}\label{class_mysynthprac_audio_processor_a157dc0cb9cab23511d168eefb77253b5}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getNumPrograms@{getNumPrograms}}
+\index{getNumPrograms@{getNumPrograms}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getNumPrograms()}{getNumPrograms()}}
+{\footnotesize\ttfamily int Mysynthprac\+Audio\+Processor\+::get\+Num\+Programs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_af41f0af1f72a32d450a78a9ab0930eab}\label{class_mysynthprac_audio_processor_af41f0af1f72a32d450a78a9ab0930eab}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getProgramName@{getProgramName}}
+\index{getProgramName@{getProgramName}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getProgramName()}{getProgramName()}}
+{\footnotesize\ttfamily const juce\+::\+String Mysynthprac\+Audio\+Processor\+::get\+Program\+Name (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_aafdb555cd7b00d795c16e888ea9b0557}\label{class_mysynthprac_audio_processor_aafdb555cd7b00d795c16e888ea9b0557}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getStateInformation@{getStateInformation}}
+\index{getStateInformation@{getStateInformation}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getStateInformation()}{getStateInformation()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::get\+State\+Information (\begin{DoxyParamCaption}\item[{juce\+::\+Memory\+Block \&}]{dest\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a646efcb119698c41652526cc91fe88d6}\label{class_mysynthprac_audio_processor_a646efcb119698c41652526cc91fe88d6}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!getTailLengthSeconds@{getTailLengthSeconds}}
+\index{getTailLengthSeconds@{getTailLengthSeconds}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{getTailLengthSeconds()}{getTailLengthSeconds()}}
+{\footnotesize\ttfamily double Mysynthprac\+Audio\+Processor\+::get\+Tail\+Length\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a067b10156850ea95d3a1964baa244320}\label{class_mysynthprac_audio_processor_a067b10156850ea95d3a1964baa244320}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!hasEditor@{hasEditor}}
+\index{hasEditor@{hasEditor}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{hasEditor()}{hasEditor()}}
+{\footnotesize\ttfamily bool Mysynthprac\+Audio\+Processor\+::has\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a87d380310bdf6570abbf32bcd32b2c11}\label{class_mysynthprac_audio_processor_a87d380310bdf6570abbf32bcd32b2c11}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!isBusesLayoutSupported@{isBusesLayoutSupported}}
+\index{isBusesLayoutSupported@{isBusesLayoutSupported}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{isBusesLayoutSupported()}{isBusesLayoutSupported()}}
+{\footnotesize\ttfamily bool Mysynthprac\+Audio\+Processor\+::is\+Buses\+Layout\+Supported (\begin{DoxyParamCaption}\item[{const Buses\+Layout \&}]{layouts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a1a005dc45f8327b380e52e66747e28da}\label{class_mysynthprac_audio_processor_a1a005dc45f8327b380e52e66747e28da}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!isMidiEffect@{isMidiEffect}}
+\index{isMidiEffect@{isMidiEffect}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{isMidiEffect()}{isMidiEffect()}}
+{\footnotesize\ttfamily bool Mysynthprac\+Audio\+Processor\+::is\+Midi\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_ab86f0c96cec6e652b182952bb29d2654}\label{class_mysynthprac_audio_processor_ab86f0c96cec6e652b182952bb29d2654}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!prepareToPlay@{prepareToPlay}}
+\index{prepareToPlay@{prepareToPlay}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{prepareToPlay()}{prepareToPlay()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::prepare\+To\+Play (\begin{DoxyParamCaption}\item[{double}]{sample\+Rate,  }\item[{int}]{samples\+Per\+Block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a2a3625375542ca79c9d43e5d37b3abd1}\label{class_mysynthprac_audio_processor_a2a3625375542ca79c9d43e5d37b3abd1}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!processBlock@{processBlock}}
+\index{processBlock@{processBlock}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{processBlock()}{processBlock()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::process\+Block (\begin{DoxyParamCaption}\item[{juce\+::\+Audio\+Buffer$<$ float $>$ \&}]{buffer,  }\item[{juce\+::\+Midi\+Buffer \&}]{midi\+Messages }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_ab9dbb4787eda60d5eb6134485fc787fd}\label{class_mysynthprac_audio_processor_ab9dbb4787eda60d5eb6134485fc787fd}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!producesMidi@{producesMidi}}
+\index{producesMidi@{producesMidi}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{producesMidi()}{producesMidi()}}
+{\footnotesize\ttfamily bool Mysynthprac\+Audio\+Processor\+::produces\+Midi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_ab56d0f1ac7da10205e1c84954ed7093d}\label{class_mysynthprac_audio_processor_ab56d0f1ac7da10205e1c84954ed7093d}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!releaseResources@{releaseResources}}
+\index{releaseResources@{releaseResources}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{releaseResources()}{releaseResources()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::release\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a37176d169184893ac4a9a76542112f65}\label{class_mysynthprac_audio_processor_a37176d169184893ac4a9a76542112f65}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!setCurrentProgram@{setCurrentProgram}}
+\index{setCurrentProgram@{setCurrentProgram}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{setCurrentProgram()}{setCurrentProgram()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::set\+Current\+Program (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a3993a39d7cf1732c2b2715a3a39342ee}\label{class_mysynthprac_audio_processor_a3993a39d7cf1732c2b2715a3a39342ee}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!setLadderFilter@{setLadderFilter}}
+\index{setLadderFilter@{setLadderFilter}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{setLadderFilter()}{setLadderFilter()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::set\+Ladder\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a0404a27aa0c84da6562dea5bc0c287df}\label{class_mysynthprac_audio_processor_a0404a27aa0c84da6562dea5bc0c287df}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!setStateInformation@{setStateInformation}}
+\index{setStateInformation@{setStateInformation}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{setStateInformation()}{setStateInformation()}}
+{\footnotesize\ttfamily void Mysynthprac\+Audio\+Processor\+::set\+State\+Information (\begin{DoxyParamCaption}\item[{const void $\ast$}]{data,  }\item[{int}]{size\+In\+Bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a47b4047cdd9c705f94a4412bce8f96e9}\label{class_mysynthprac_audio_processor_a47b4047cdd9c705f94a4412bce8f96e9}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!cachedBuffer@{cachedBuffer}}
+\index{cachedBuffer@{cachedBuffer}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{cachedBuffer}{cachedBuffer}}
+{\footnotesize\ttfamily juce\+::\+Audio\+Buffer$<$float$>$ Mysynthprac\+Audio\+Processor\+::cached\+Buffer}
+
+\mbox{\Hypertarget{class_mysynthprac_audio_processor_a9d223e3dc6f3f4a2aec957e818cbfc46}\label{class_mysynthprac_audio_processor_a9d223e3dc6f3f4a2aec957e818cbfc46}} 
+\index{MysynthpracAudioProcessor@{MysynthpracAudioProcessor}!state@{state}}
+\index{state@{state}!MysynthpracAudioProcessor@{MysynthpracAudioProcessor}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily juce\+::\+Audio\+Processor\+Value\+Tree\+State Mysynthprac\+Audio\+Processor\+::state}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_plugin_processor_8h}{Plugin\+Processor.\+h}}\item 
+\mbox{\hyperlink{_plugin_processor_8cpp}{Plugin\+Processor.\+cpp}}\end{DoxyCompactItemize}
